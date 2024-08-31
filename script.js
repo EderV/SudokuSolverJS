@@ -21,6 +21,8 @@ let puzzle = [
 //     [2,8,7,4,1,9,6,3,5],
 //     [3,4,5,2,8,6,1,7,9]]
 
+console.time("SudokuSolver");
+
 let xPointer = 0
 let yPointer = 0
 
@@ -65,6 +67,8 @@ console.log('Res: ')
 console.log(puzzle)
 console.log(editableCell)
 console.log('Times: ' + times)
+
+console.timeEnd('SudokuSolver');
 
 function stepFw() {
     let editableFound = false
